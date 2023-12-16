@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+nav {
+    background: #22282a;
+    height: 80px;
+    width: 100%;
+    transition: 1s;
+
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    max-resolution:  5px;
+
+}
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+
+}
+a.active,a:hover{
+    background: #ff274b;
+    transition: .5s;
+
+}
+.checkbtn {
+    font-size: 30px;
+    color:green;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+#check {
+    display: none;
+
+}
+.sold,.soldd,.solddd,.soldddd {
+    border: 2px black solid;
+    color: white;
+    text-align: center;
+    
+    margin-left: 5%;
+    margin-right: 5%; 
+    margin-top: 5%;
+    padding: 10%;
+    border-radius: 15px;
+    background-color: #22282a;
+    box-shadow: 5px 5px 5px black;
+}
+
+.soldd {
+
+    display: grid;
+    grid-area: soldd;
+}
+.sold {
+    display: grid;
+    grid-area: sold;
+}
+.solddd {
+    display: grid;
+    grid-area: solddd;
+}
+.soldddd {
+    display: grid;
+    grid-area: soldddd;
+}
+
+.title {
+    margin-top: 100px;
+    text-align: center;
+    color: #ff274b;
+    font-weight: bold;
+    font-size: 30px;
+    
+    grid-area: title;
+}
+.sold:hover {
+    background-color: rgb(244, 240, 240);
+    color: #ff274b;
+    cursor: pointer;
+    filter: brightness(200%);
+    transition: 1s;
+}
+.soldd:hover {
+    background-color: rgb(244, 240, 240);
+    color: #ff274b;
+    cursor: pointer;
+    filter: brightness(200%);
+    transition: 1s;
+}
+.solddd:hover {
+    background-color: rgb(244, 240, 240);
+    color: #ff274b;
+    cursor: pointer;
+    filter: brightness(200%);
+    transition: 1s;
+}
+.soldddd:hover {
+    background-color: rgb(244, 240, 240);
+    color: #ff274b;
+    cursor: pointer;
+    filter: brightness(200%);
+    transition: 1s;
+}
+
+
+.x {
+    display: grid;
+    grid-area: x;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "sold soldd";
+
+}
+.y {
+    display: grid;
+    grid-area: y;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:  "solddd soldddd";
+}
+.dash {
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+    
+    grid-template-areas:"title" "x" "y" ;
+}
+.question {
+    text-align: center;
+    margin-top: 20vh;
+    font-size: 20px;
+}

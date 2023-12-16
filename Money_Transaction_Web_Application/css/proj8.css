@@ -1,0 +1,365 @@
+:root{
+    --primarycolor:#ff274b;
+    --secondcolor:#f7bcf7;
+    --lightcolor:#ffffff;
+    --bgcolor-1:#171a1c;
+    --bgcolor-1:#22282a;
+    --padding:8%;
+    
+    }
+    * { 
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+    }
+    body {
+        display: grid;
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: "nav"
+                              "section"
+                              "footer";
+      
+    }
+     
+    html{
+        font-family: sans-serif;
+        font-size:16px;
+        color: var(--lightcolor);
+    }      
+    .home {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--bgcolor-1);
+    
+    } 
+    
+    section {
+        
+        grid-area: section;
+    }
+    
+    span {
+    
+        color:var(--primarycolor);
+    } 
+    h2 {
+        font-size: 2.2rem;
+        letter-spacing: 0.12rem;
+        cursor:pointer;
+    } 
+    nav {
+        
+        padding-top: 2.8rem;
+        padding-left: var(--padding);
+        padding-right: var(--padding);
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        position: fixed;
+        background-color:var(--bgcolor-1);
+        width: 100%;
+    
+    } 
+    nav ul li  {
+        list-style-type:none;
+        display:inline-block;
+        margin: 0.8rem  1.5rem;
+    
+    } 
+    nav ul li a {
+        color :var(--lightcolor);
+        text-decoration:none;
+        text-transform:capitalize;
+        transition: 0.4s;
+        font-size: 20px;
+    }
+    nav ul li a:hover {
+        color: var(--primarycolor);
+    
+    }
+    .sign a {
+        color: #ffffff;
+        text-decoration: none;
+    
+      
+    }
+    .sign  {
+        border: solid 2px black;
+        background-color: #ff274b;
+        padding: 10px;
+        border-radius: 20px;
+       
+    }
+    section h1 {
+        text-align: center;
+        margin-top: 20vh;
+    }
+    .signin a{
+        color: #ffffff;
+        text-decoration: none;
+        
+    }
+    .signin {
+        border: solid 2px  #ff274b;
+        background-color: white;
+        
+        padding: 10px 50px;
+        border-radius: 20px;
+        margin-left: 300PX;
+    }
+    .signin a {
+        color:red;
+        font-size: 17PX;
+    }
+
+
+    .signin:hover{
+        padding: 15px 60px;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .sign:hover{
+       filter:opacity(30%);
+       transition: 1s;
+        
+    
+    }
+    .article {
+        
+        grid-area: article;
+        color: black;
+        text-align: center;
+        margin-top: 120px;
+    }
+    .text {
+        display: grid;
+        height: 170vh;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: "article immg"
+                              "im2 art"
+                              "art1 im3" "im4 art2" "vid1 vid2";
+        background-color:white;
+    
+    }
+    .video1{
+        grid-area: vid1;
+        margin-left: 150px;
+        
+       
+    }
+    .video2{
+        grid-area: vid2;
+       
+
+
+
+    }
+
+
+    .immm {
+        
+        grid-area: immg;
+       
+    }
+    .immm img {
+        width: 400px;
+        height: 400px;
+    }
+    .im4 {
+        grid-area: im4;
+    }
+    
+    .art2 {
+        grid-area: art2;
+        color: #171a1c;
+    }
+    .im2 {
+        grid-area: im2;
+        
+    }
+    .im2 img{
+        width: 500px;
+        height: 500px;
+    }
+    .art {
+        grid-area: art;
+        color: black;
+        text-align: center;
+        margin-top: 120px;
+    
+    }
+    .art1 {
+        grid-area: art1;
+        color: black;
+        text-align: center;
+        margin-top: 130px;
+    
+    
+    }
+    .im3 {
+        grid-area: im3;
+    
+    }
+    .cx li {
+        color:#ff274b
+        
+    }
+    .cx {
+         margin-left: 50px;
+         grid-area: cx;
+    }
+    footer {
+        grid-area: footer;
+        margin-top: 250vh;
+        background-color: #22282a;
+        color: aliceblue;
+    }
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 500px;
+        grid-template-areas:"cxx con" ;
+    }
+    .con {
+        grid-area: con;
+        margin-left: 70px;
+      
+    }
+    
+    .cxx {
+        grid-area: cxx;
+      
+    }
+    .con ul {
+        margin-left: 50px;
+    }
+    
+    .con ul li {
+        margin: 40px;
+    }
+    .cx li {
+        margin: 40px;
+    }
+    
+    @media screen and (max-width:750px) {
+        .text {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr  ;
+            grid-template-rows: repeat(6,1fr);
+            grid-template-areas: "immg" "article"  "im2" "art" "im3" "art1" ;
+            background-color:white;
+        
+        }
+        .article {
+        
+            grid-area: article;
+            color: black;
+            text-align: center;
+            margin-top: 120px;
+        }
+        
+        
+    .immm {
+        
+        grid-area: immg;
+    }
+    .im2 {
+        grid-area: im2;
+        
+    }
+    .art {
+        grid-area: art;
+        color: black;
+        text-align: center;
+        margin-top: 120px;
+    
+    }
+    
+    .art1 {
+        grid-area: art1;
+        color: black;
+        text-align: center;
+        margin-top: 130px;
+    
+    
+    }
+    .im3 {
+        grid-area: im3;
+    
+    }
+    
+    nav ul li  {
+        list-style-type:none;
+        display:inline-block;
+        margin-right: 100px;
+    
+    } 
+    nav {
+        padding-top: 2.8rem;
+        padding-left: var(--padding);
+        padding-right: var(--padding);
+        display: flex;
+        
+      
+    
+    } 
+    .signin {
+        border: solid 2px black;
+        background-color: #ff274b;
+        padding: 20px 60px;
+        border-radius: 20px;
+        margin-top: 300px;
+    }
+    
+    
+    
+    nav {
+        display: grid;
+        grid-template-rows: repeat(3,auto);
+        grid-template-columns: auto;
+        grid-area: "w" "y" "z";
+        margin-right: 108px;
+        
+    }
+    .tl h2{
+        grid-area:w;
+        
+        
+    }
+    ul {
+        grid-area: y;
+    }
+    ul li {
+        font-size: 25px;
+    }
+    .signin{
+        grid-area: z;
+        max-width: 100px;
+        
+        
+    }
+    h1 {
+        margin-top: 10%;
+    }
+    
+    .con {
+        grid-area: con;
+        margin-left: 40px;
+    }
+    footer {
+        grid-area: footer;
+        margin-top: 220vh;
+        background-color: #22282a;
+        color: aliceblue;
+    }
+    .art2,.im4 {
+        visibility: hidden;
+    }
+    
+    
+    
+    }
+    

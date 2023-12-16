@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    
+}
+nav {
+    background: #22282a;
+    height: 80px;
+    width: 100%;
+    transition: 1s;
+
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    max-resolution: 0 5px;
+
+}
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+
+}
+a.active,a:hover{
+    background: #ff274b;
+    transition: .5s;
+
+}
+.checkbtn {
+    font-size: 30px;
+    color:green;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+#check {
+    display: none;
+
+}
+.title {
+    margin-top: 100px;
+    text-align: center;
+    color: #ff274b;
+    font-weight: bold;
+    font-size: 30px;
+    
+    grid-area: title;
+}
+.k {
+    
+    border: solid 2px black;
+    color:white;
+    background-color: #22282a;
+    padding: 150px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+img {
+    width: 400px; ;
+    height:400px ;
+    padding-right: 100px;  
+}
+.message {
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 20px;
+}
+.tm li{
+    list-style-type: disc;
+}

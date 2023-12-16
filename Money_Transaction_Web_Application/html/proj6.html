@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/proj6.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+    <title>money</title>
+</head>
+<body>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="ckeckbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a  href="proj4.html">Dashboard</a></li>
+            <li><a href="proj5.html">Send</a></li>
+            <li><a href="proj7.html">Recive</a></li>
+            <li><a href="proj6.html">Withdraw</a></li>
+            <li><a href="proj.html">LOGOUT</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="send">
+            <div class="title"><h1>Withdraw</h1></div>
+        <form>
+            <div class="k">
+
+                <label>Card Number</label>
+                <input type="number" maxlength="18" placeholder="0000-0000-0000-0000">
+        
+                <label>Date of Expiration </label>
+                <input type="date">
+        
+                <label>Full Name</label>
+                <input type="text" placeholder="Full Name of card owner">
+                <input type="button" value="Withdraw" onclick="submit()">
+                
+                
+            
+            </div>
+            
+        </form>
+
+        </div>
+    </section>
+    
+</body>
+</html>

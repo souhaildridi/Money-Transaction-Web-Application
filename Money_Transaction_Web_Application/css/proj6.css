@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    font-family:sans-serif;
+}
+nav {
+    background: #22282a;
+    height: 80px;
+    width: 100%;
+    transition: 1s;
+
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    max-resolution: 0 5px;
+
+}
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+
+}
+a.active,a:hover{
+    background: #ff274b;
+    transition: .5s;
+
+}
+.checkbtn {
+    font-size: 30px;
+    color:green;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+#check {
+    display: none;
+
+}
+.title {
+    margin-top: 100px;
+    text-align: center;
+    color: #ff274b;
+    font-weight: bold;
+    font-size: 30px;
+    
+    grid-area: title;
+}
+input[type=text]{
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 10px 100px;
+    transition: width 0.4s ease-in-out;
+}
+input[type=date]{
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 10px 100px;
+    transition: width 0.4s ;
+}
+input[type=text]:focus{
+    background-color: rgb(135, 253, 145);
+    
+
+   
+}
+input[type=number]{
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 10px 100px;
+    
+}
+.k {
+    
+    border: solid 2px black;
+    color:white;
+    background-color: #22282a;
+    padding: 150px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+input[type=button] {
+    border: 2px solid black;
+    padding:  18px 160px;
+    margin-top: 40px;
+    border-radius: 25px;
+    background-color: #ff274b;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}

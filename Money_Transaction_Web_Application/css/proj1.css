@@ -1,0 +1,58 @@
+body {
+    background-color:#22282a;
+}
+.sign {
+    border: solid 2px rgb(241, 237, 237);
+    text-align: center;
+    margin: 120px 500px;
+    border-radius: 5px;
+    background-color: white;
+    
+}
+input {
+    padding:15px 100px;
+    border-radius: 5px;
+
+  
+}
+h3 {
+    text-align:center;
+}
+a {
+    text-decoration: none;
+}
+.log {
+    border: solid 2px rgb(234, 231, 231);
+    text-align: center;
+    background-color: red;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 60px 65px;
+    color: white;
+}
+.dd {
+    margin-right: 300px;
+}
+
+
+
+
+
+    @media screen and (max-width:1152px){
+        .sign {
+            border: none;
+            margin: 120px 100px;
+            border-radius: 5px;
+            margin-right: auto;
+        
+             
+        }
+        body {
+            background-color:white;
+        }.log {
+            
+            padding:10px 100px;
+            margin: 15px 30px;
+    }
+    
+}
